@@ -1,0 +1,33 @@
+#!/bin/bash
+
+if [ $2 == '+' ]; then
+
+    x=$1
+    y=$3
+    sum="$x + $y"
+    echo "sum = `bc <<< $sum`"
+
+fi
+
+if [ $2 == '-' ]
+then
+ x=$1
+ y=$3
+ sub="$x - $y"
+echo "sub = `bc <<<$sub`"
+fi
+
+if [ $2 == 'm' ]
+then
+ x=$1
+ y=$3
+ multi="$x * $y"
+echo "mult = `bc <<<$multi`"
+fi
+if [ $2 == '/' ]
+then
+ x=$1
+ y=$3
+ div="$x / $y"
+echo "div = `bc <<<$div`"
+fi
